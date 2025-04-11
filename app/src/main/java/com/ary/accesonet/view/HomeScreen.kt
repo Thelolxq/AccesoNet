@@ -152,7 +152,7 @@ fun HomeScreen(viewModel: AccesoNetViewModel = viewModel()) {
 
         viewModel.classificationResult?.let { (itemName, confidence) ->
 
-            val displayedName = if (confidence < 0.8f) "Desconocido" else itemName
+            val displayedName = if (confidence < 0.5f) "Desconocido" else itemName
             val displayedConfidence = if (confidence < 0.8f) 0f else confidence
             Text("Resultado: $displayedName (${String.format("%.1f", displayedConfidence * 100)}%)")
             Spacer(modifier = Modifier.height(8.dp))

@@ -51,7 +51,6 @@ android {
 
 dependencies {
     implementation (libs.tensorflow.lite)
-    implementation (libs.tensorflow.lite.support)
     implementation ("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
